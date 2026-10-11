@@ -29,3 +29,28 @@ class RegistroRejeitado:
 
 class ErroDeArquivo(Exception):
     """Falha fatal: não é possível produzir um relatório confiável."""
+
+
+@dataclass(frozen=True)
+class ResumoResponsavel:
+    """Situação das tarefas de uma pessoa."""
+
+    responsavel: str
+    total: int
+    em_aberto: int
+    atrasadas: int
+
+
+@dataclass(frozen=True)
+class ResultadoAnalise:
+    """Tudo o que o relatório precisa, já calculado."""
+
+    data_referencia: date
+    total_lidas: int
+    total_unicas: int
+    rejeitadas: list[RegistroRejeitado]
+    duplicadas: list[RegistroRejeitado]
+    por_status: dict[str, int]
+    por_prioridade: dict[str, int]
+    por_responsavel: list[ResumoResponsavel]
+    atrasadas: list[tuple[Tarefa, int]]
