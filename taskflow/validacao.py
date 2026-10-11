@@ -115,3 +115,30 @@ def validar_linhas(linhas):
         else:
             tarefas.append(tarefa)
     return tarefas, rejeitados
+
+
+def separar_duplicadas(tarefas):
+    """Separa tarefas com id repetido.
+
+    Recebe a lista de Tarefa válidas, na ordem do arquivo.
+    Mantém a primeira ocorrência de cada id e descarta as seguintes.
+    Devolve (unicas, duplicadas): as duplicadas são RegistroRejeitado
+    que apontam para a linha da primeira ocorrência.
+    """
+    primeira_linha_por_id = {}
+    unicas = []
+    duplicadas = []
+
+    for tarefa in tarefas:
+        if tarefa.id in primeira_linha_por_id:
+            linha_original = primeira_linha_por_id[tarefa.id]
+            motivo = (
+                f"id {tarefa.id} duplicado; "
+                f"primeira ocorrência na linha {linha_original}"
+            )
+            duplicadas.append(RegistroRejeitado(tarefa.numero_linha, [motivo]))
+        else:
+            primeira_linha_por_id[tarefa.id] = tarefa.numero_linha
+            unicas.append(tarefa)
+
+    return unicas, duplicadas

@@ -1,0 +1,10 @@
+id,titulo,responsavel,status,prioridade,data_criacao,prazo,data_conclusao
+1,Trocar cabos da sala 1,Ana,aberta,media,2026-09-25,2026-10-05,
+2,Revisar firewall,Bruno,em_andamento,alta,2026-10-01,2026-10-10,
+3,Atualizar inventário,Carla,aberta,baixa,2026-10-01,2026-10-11,
+4,Testar nobreak,Diego,aberta,media,2026-10-01,2026-10-12,
+5,Configurar backup,Ana,concluida,alta,2026-09-20,2026-10-01,2026-09-30
+6,Migrar impressoras,Bruno,cancelada,baixa,2026-09-20,2026-10-01,
+7,Renovar certificados,Carla,aberta,alta,2026-09-01,2026-09-20,
+7,Renovar certificados (cópia),Diego,aberta,alta,2026-09-01,2026-09-20,
+8,Documentar rotina,Ana,pendente,media,2026-10-01,2026-10-20,

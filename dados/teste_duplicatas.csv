@@ -1,0 +1,11 @@
+id,titulo,responsavel,status,prioridade,data_criacao,prazo,data_conclusao
+1,Trocar switch,Ana,aberta,media,2026-10-01,2026-10-12,
+2,Revisar backup,Bruno,aberta,alta,2026-10-01,2026-10-12,
+1,Trocar switch (versão 2),Carla,em_andamento,alta,2026-10-02,2026-10-13,
+3,Atualizar inventário,Diego,aberta,baixa,2026-10-01,2026-10-12,
+3,Atualizar inventário,Ana,aberta,baixa,2026-10-01,2026-10-12,
+3,Atualizar inventário (3),Bruno,aberta,baixa,2026-10-01,2026-10-12,
+4,Configurar impressora,Carla,pendente,media,2026-10-01,2026-10-12,
+4,Configurar impressora,Carla,aberta,media,2026-10-01,2026-10-12,
+5,Reiniciar servidor,Ana,aberta,alta,2026-10-01,2026-10-12,
+6,Reiniciar servidor,Bruno,aberta,alta,2026-10-01,2026-10-12,
