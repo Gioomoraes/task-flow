@@ -1,0 +1,12 @@
+id,titulo,responsavel,status,prioridade,data_criacao,prazo,data_conclusao
+1,Tarefa com espacos e maiusculas,  Ana ,  Aberta ,ALTA,2026-10-01,2026-10-12,
+2,Sem responsavel,,aberta,media,2026-10-01,2026-10-12,
+3,Status ruim,Bruno,pendente,media,2026-10-01,2026-10-12,
+4,Prioridade ruim,Carla,aberta,urgente,2026-10-01,2026-10-12,
+5,Prazo antes da criacao,Diego,aberta,baixa,2026-10-10,2026-10-05,
+6,Concluida sem data,Ana,concluida,media,2026-10-01,2026-10-12,
+-3,Id negativo,Bruno,aberta,alta,2026-10-01,2026-10-12,
+7,Linha curta,Carla
+
+8,Colunas a mais,Diego,aberta,baixa,2026-10-01,2026-10-12,,extra
+9,Datas vazias,Ana,aberta,media,,,
