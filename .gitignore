@@ -1,0 +1,21 @@
+# Ambiente virtual (recriável, específico da máquina)
+.venv/
+
+# Cache do Python
+__pycache__/
+*.pyc
+
+# Segredos e configurações locais
+.env
+
+# Relatórios gerados pelo programa
+saida/
+
+# Cache de ferramentas (para quando entrarmos em testes)
+.pytest_cache/
+
+# Configurações do editor
+.vscode/
+
+# Arquivos do sistema operacional
+Thumbs.db
